@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <img src="./src/imagens/Banner.jpg" alt="Vista Urbana de Curitiba">
             </div>
             <div class="logo-banner">
-              <img src="./src/imagens/Presservice-logo.png" alt="Logo Presservice">
+              <img src="./src/imagens/Logo 5.png" alt="Logo Presservice">
             </div>
             <h1>SOMOS A ESCOLHA DEFINITIVA,</h1>
             <h2>PARA SÍNDICOS QUE NÃO PODEM ERRAR.</h2>
-            <a href="#unidades" class="btn-unidades">Solicite Seu Orçamento!</a>
+            <a href="#contato" class="btn-unidades">Solicite Seu Orçamento!</a>
         </div>
       </div>
       <section class="cases-resumo" id="cases-resumo">
@@ -354,7 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <!-- LINHA 1 -->
     <div class="cell img">
-      <img src="./src/imagens/Presservice-logo-transparente.png" alt="Presservice">
+      <img src="./src/imagens/Logo 5.png" alt="Presservice">
     </div>
     <div class="cell vazio"></div>
     <div class="cell img">
@@ -437,6 +437,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   <strong>Email:</strong>
                   <a href="mailto:presservicemanutencaopredial@gmail.com" style="color: #fff; text-decoration: none;">presservicemanutencaopredial@gmail.com</a>
                 </div>
+                <div class="unidade-contato-item" style="display: flex; align-items: flex-start; gap: 4px;">
+                  <img src="./src/imagens/location.png" alt="Localização" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" />
+                  <a href="https://www.google.com/maps/search/R+Luiz+Visinoni+1199+Cajuru+Curitiba+PR" target="_blank" style="color: #fff; text-decoration: none;">R. Luiz Visinoni, nº 1199 - Cajuru, Curitiba - PR</a>
+                </div>
               </div>
             </span>
           </div>
@@ -454,6 +458,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="unidade-contato-item">
                   <strong>Email:</strong>
                   <a href="mailto:presservicesp@gmail.com" style="color: #fff; text-decoration: none;">presservicesp@gmail.com</a>
+                </div>
+                <div class="unidade-contato-item" style="display: flex; align-items: flex-start; gap: 4px;">
+                  <img src="./src/imagens/location.png" alt="Localização" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" />
+                  <a href="https://www.google.com/maps/search/R+dos+Piquiroes+40+Sl+312+Jd+Aquarius+São+José+dos+Campos+SP" target="_blank" style="color: #fff; text-decoration: none;">R. dos Piquiroes, 40 - Sl. 312 - Jd. Aquarius - São José dos Campos - SP</a>
                 </div>
               </div>
             </span>
