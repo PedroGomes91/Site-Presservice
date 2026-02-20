@@ -129,27 +129,45 @@
       // Fechar menu quando clicar em um item
       menuItems.forEach(item => {
         item.addEventListener('click', (e) => {
-          // Se não for o item de serviços, fecha o menu
-          if (!item.classList.contains('servicos-item')) {
-            const nav = menuNav.closest('nav');
-            nav.classList.remove('ativo');
-            btnMenuHamburger.classList.remove('ativo');
-            btnMenuHamburger.setAttribute('aria-expanded', 'false');
-          }
+          // Fecha o menu quando clica em qualquer item
+          const nav = menuNav.closest('nav');
+          nav.classList.remove('ativo');
+          btnMenuHamburger.classList.remove('ativo');
+          btnMenuHamburger.setAttribute('aria-expanded', 'false');
         });
       });
 
-      // Toggle para o submenu em mobile
+      // Toggle para o submenu - APENAS EM DESKTOP
+      // Em mobile/hamburger, o clique navega normalmente sem dropdown
       if (servicosItem) {
         const servicosLink = servicosItem.querySelector('a');
-        servicosLink.addEventListener('click', (e) => {
-          // Se for mobile (menos de 768px), previne a navegação e abre o submenu
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            servicosItem.classList.toggle('ativo');
+        servicosLink.addEventListener('mouseenter', () => {
+          // Dropdown ao passar o mouse APENAS em desktop
+          if (window.innerWidth > 768) {
+            servicosItem.classList.add('ativo');
+          }
+        });
+        
+        servicosItem.addEventListener('mouseleave', () => {
+          // Fecha dropdown ao sair do mouse
+          if (window.innerWidth > 768) {
+            servicosItem.classList.remove('ativo');
           }
         });
       }
+
+      // Fechar menu quando clicar fora dele
+      document.addEventListener('click', (e) => {
+        const nav = menuNav.closest('nav');
+        const isClickInsideNav = nav.contains(e.target);
+        const isClickInsideBtn = btnMenuHamburger.contains(e.target);
+
+        if (!isClickInsideNav && !isClickInsideBtn && nav.classList.contains('ativo')) {
+          nav.classList.remove('ativo');
+          btnMenuHamburger.classList.remove('ativo');
+          btnMenuHamburger.setAttribute('aria-expanded', 'false');
+        }
+      });
 
       // Fechar menu quando redimensionar a janela para desktop
       window.addEventListener('resize', () => {

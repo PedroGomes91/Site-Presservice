@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </svg>
           Correção de Manifestações Patológicas
         </button>
-        <button class="botao-servico" style="grid-column: 3;" onclick="window.location.hash='servicos/revitalizacao'">
+        <button class="botao-servico" onclick="window.location.hash='servicos/revitalizacao'">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icone-botao">
             <path d="M259.92 262.91L216.4 149.77a9 9 0 00-16.8 0l-43.52 113.14a9 9 0 01-5.17 5.17L37.77 311.6a9 9 0 000 16.8l113.14 43.52a9 9 0 015.17 5.17l43.52 113.14a9 9 0 0016.8 0l43.52-113.14a9 9 0 015.17-5.17l113.14-43.52a9 9 0 000-16.8l-113.14-43.52a9 9 0 01-5.17-5.17zM108 68L88 16 68 68 16 88l52 20 20 52 20-52 52-20-52-20zM426.67 117.33L400 48l-26.67 69.33L304 144l69.33 26.67L400 240l26.67-69.33L496 144l-69.33-26.67z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
           </svg>
@@ -897,7 +897,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Reiniciar quando há mudança de hash (navegação)
+  // Renicia quando há mudança de hash (navegação)
   const originalCarregarPagina = carregarPagina;
   window.carregarPagina = function() {
     originalCarregarPagina.call(this);
@@ -906,7 +906,36 @@ document.addEventListener("DOMContentLoaded", () => {
       inicializarTimeline();
       inicializarCarrosselCases();
       iniciarAnimacaoTimelineScroll();
+      // Reorganizar apenas em mobile
+      if (window.innerWidth <= 768) {
+        reorganizarDiferenciaisEmMobile();
+      }
     }, 100);
+  };
+
+  // Função para reorganizar diferenciais em mobile
+  window.reorganizarDiferenciaisEmMobile = function() {
+    const grid = document.querySelector('.diferenciais-grid');
+    if (!grid) return;
+
+    const allCells = Array.from(grid.querySelectorAll('.cell'));
+    
+    // Processar cada linha de comparação (trio de células)
+    // Começar do índice 6 (primeira comparação, após linhas 1-2)
+    // Processar de trás para frente para não afetar os índices posteriores
+    for (let i = allCells.length - 3; i >= 6; i -= 3) {
+      const positivo = allCells[i];
+      const categoria = allCells[i + 1];
+      const negativo = allCells[i + 2];
+
+      if (positivo && categoria && negativo) {
+        // Reordenar para: categoria, positivo, negativo
+        // Move categoria para antes de positivo
+        grid.insertBefore(categoria, positivo);
+        // Move negativo para depois de positivo
+        grid.insertBefore(negativo, positivo.nextSibling);
+      }
+    }
   };
 
   // Trocar cores do SVG WhatsApp no hover (verde ↔ branco)
