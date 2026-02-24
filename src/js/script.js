@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="banner">
               <img src="./src/imagens/Banner.jpg" alt="Vista Urbana de Curitiba">
             </div>
-            <div class="logo-banner">
-              <img src="./src/imagens/Logo 5.png" alt="Logo Presservice">
-            </div>
             <h1>SOMOS A ESCOLHA DEFINITIVA,</h1>
             <h2>PARA SÍNDICOS QUE NÃO PODEM ERRAR.</h2>
             <a href="#contato" class="btn-unidades">Solicite Seu Orçamento!</a>
@@ -430,16 +427,21 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="unidade-nome">Curitiba</div>
               <div class="unidade-contatos">
                 <div class="unidade-contato-item">
-                  <strong>WhatsApp:</strong>
-                  <a href="https://wa.me/5541996536631" target="_blank" style="color: #fff; text-decoration: none;">(41) 99653-6631</a>
+                  <a href="https://wa.me/5541996536631" target="_blank" class="external-link" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552" style="width: 18px; height: 18px; flex-shrink: 0;"><defs><linearGradient id="b" x1="85.915" x2="86.535" y1="32.567" y2="137.092" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#57d163"/><stop offset="1" stop-color="#23b33a"/></linearGradient><filter id="a" width="1.115" height="1.114" x="-.057" y="-.057" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3.531"/></filter></defs><path fill="#b3b3b3" d="m54.532 138.45 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.523h.023c33.707 0 61.139-27.426 61.153-61.135.006-16.335-6.349-31.696-17.895-43.251A60.75 60.75 0 0 0 87.94 25.983c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.558zm-40.811 23.544L24.16 123.88c-6.438-11.154-9.825-23.808-9.821-36.772.017-40.556 33.021-73.55 73.578-73.55 19.681.01 38.154 7.669 52.047 21.572s21.537 32.383 21.53 52.037c-.018 40.553-33.027 73.553-73.578 73.553h-.032c-12.313-.005-24.412-3.094-35.159-8.954zm0 0" filter="url(#a)"/><path fill="#fff" d="m12.966 161.238 10.439-38.114a73.42 73.42 0 0 1-9.821-36.772c.017-40.556 33.021-73.55 73.578-73.55 19.681.01 38.154 7.669 52.047 21.572s21.537 32.383 21.53 52.037c-.018 40.553-33.027 73.553-73.578 73.553h-.032c-12.313-.005-24.412-3.094-35.159-8.954z"/><path fill="url(#linearGradient1780)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.559 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.524h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.929z"/><path fill="url(#b)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.313-6.179 22.558 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.517 31.126 8.523h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.928z"/><path fill="#fff" fill-rule="evenodd" d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013 12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74 1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.666-13.647"/></svg>
+                    <span>WhatsApp:</span>
+                    (41) 99653-6631
+                  </a>
                 </div>
                 <div class="unidade-contato-item">
-                  <strong>Email:</strong>
-                  <a href="mailto:presservicemanutencaopredial@gmail.com" style="color: #fff; text-decoration: none;">presservicemanutencaopredial@gmail.com</a>
+                  <a href="mailto:presservicemanutencaopredial@gmail.com" class="external-link" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 16px; height: 16px; flex-shrink: 0; fill: #fff;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                    <span>Email:</span>
+                    presservicemanutencaopredial@gmail.com
+                  </a>
                 </div>
-                <div class="unidade-contato-item" style="display: flex; align-items: flex-start; gap: 4px;">
-                  <img src="./src/imagens/location.png" alt="Localização" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" />
-                  <a href="https://www.google.com/maps/search/R+Luiz+Visinoni+1199+Cajuru+Curitiba+PR" target="_blank" style="color: #fff; text-decoration: none;">R. Luiz Visinoni, nº 1199 - Cajuru, Curitiba - PR</a>
+                <div class="unidade-contato-item">
+                  <a href="https://www.google.com/maps/search/R+Luiz+Visinoni+1199+Cajuru+Curitiba+PR" target="_blank" class="external-link" style="color: #fff; text-decoration: none;">R. Luiz Visinoni, nº 1199 - Cajuru, Curitiba - PR</a>
                 </div>
               </div>
             </span>
@@ -452,16 +454,21 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="unidade-nome">São José dos Campos</div>
               <div class="unidade-contatos">
                 <div class="unidade-contato-item">
-                  <strong>WhatsApp:</strong>
-                  <a href="https://wa.me/5512991592590" target="_blank" style="color: #fff; text-decoration: none;">(12) 99159-2590</a>
+                  <a href="https://wa.me/5512991592590" target="_blank" class="external-link" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552" style="width: 18px; height: 18px; flex-shrink: 0;"><defs><linearGradient id="b" x1="85.915" x2="86.535" y1="32.567" y2="137.092" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#57d163"/><stop offset="1" stop-color="#23b33a"/></linearGradient><filter id="a" width="1.115" height="1.114" x="-.057" y="-.057" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3.531"/></filter></defs><path fill="#b3b3b3" d="m54.532 138.45 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.523h.023c33.707 0 61.139-27.426 61.153-61.135.006-16.335-6.349-31.696-17.895-43.251A60.75 60.75 0 0 0 87.94 25.983c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.558zm-40.811 23.544L24.16 123.88c-6.438-11.154-9.825-23.808-9.821-36.772.017-40.556 33.021-73.55 73.578-73.55 19.681.01 38.154 7.669 52.047 21.572s21.537 32.383 21.53 52.037c-.018 40.553-33.027 73.553-73.578 73.553h-.032c-12.313-.005-24.412-3.094-35.159-8.954zm0 0" filter="url(#a)"/><path fill="#fff" d="m12.966 161.238 10.439-38.114a73.42 73.42 0 0 1-9.821-36.772c.017-40.556 33.021-73.55 73.578-73.55 19.681.01 38.154 7.669 52.047 21.572s21.537 32.383 21.53 52.037c-.018 40.553-33.027 73.553-73.578 73.553h-.032c-12.313-.005-24.412-3.094-35.159-8.954z"/><path fill="url(#linearGradient1780)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.559 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.524h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.929z"/><path fill="url(#b)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.313-6.179 22.558 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.517 31.126 8.523h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.928z"/><path fill="#fff" fill-rule="evenodd" d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013 12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74 1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.666-13.647"/></svg>
+                    <span>WhatsApp:</span>
+                    (12) 99159-2590
+                  </a>
                 </div>
                 <div class="unidade-contato-item">
-                  <strong>Email:</strong>
-                  <a href="mailto:presservicesp@gmail.com" style="color: #fff; text-decoration: none;">presservicesp@gmail.com</a>
+                  <a href="mailto:presservicesp@gmail.com" class="external-link" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 16px; height: 16px; flex-shrink: 0; fill: #fff;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                    <span>Email:</span>
+                    presservicesp@gmail.com
+                  </a>
                 </div>
-                <div class="unidade-contato-item" style="display: flex; align-items: flex-start; gap: 4px;">
-                  <img src="./src/imagens/location.png" alt="Localização" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;" />
-                  <a href="https://www.google.com/maps/search/R+dos+Piquiroes+40+Sl+312+Jd+Aquarius+São+José+dos+Campos+SP" target="_blank" style="color: #fff; text-decoration: none;">R. dos Piquiroes, 40 - Sl. 312 - Jd. Aquarius - São José dos Campos - SP</a>
+                <div class="unidade-contato-item">
+                  <a href="https://www.google.com/maps/search/R+dos+Piquiroes+40+Sl+312+Jd+Aquarius+São+José+dos+Campos+SP" target="_blank" class="external-link" style="color: #fff; text-decoration: none;">R. dos Piquiroes, 40 - Sl. 312 - Jd. Aquarius - São José dos Campos - SP</a>
                 </div>
               </div>
             </span>
@@ -542,7 +549,7 @@ document.addEventListener("DOMContentLoaded", () => {
     instalacao: {
       titulo: 'Instalação de Pontos de Ancoragem',
       descricao: 'Sistemas permanentes para trabalho em altura, conforme normas técnicas NR-35, garantindo acesso seguro e contínuo à fachada. Nossa equipe especializada instala pontos de ancoragem que permitem inspeções, limpeza, manutenção e reparos com total segurança. Utilizamos materiais de alta qualidade e seguimos rigorosamente os padrões internacionais de engenharia.',
-      imagem: './src/imagens/Ancoragem.jpeg'
+      imagens: ['./src/imagens/Ancoragem.jpeg', './src/imagens/Ancoragem 2.jpeg', './src/imagens/Ancoragem 3.jpg']
     },
     laudos: {
       titulo: 'Laudos Técnicos de Fachada',
@@ -557,7 +564,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lavagem: {
       titulo: 'Lavagem de Fachadas',
       descricao: 'Limpeza controlada, adequada a cada tipo de revestimento, preservando materiais e recuperando a aparência original. Utilizamos técnicas de pressão variável, limpeza química segura e equipamentos de última geração. Cada projeto é avaliado individualmente para determinar o melhor método de limpeza conforme o material e grau de sujidade.',
-      imagem: './src/imagens/Lavagem.png'
+      imagem: './src/imagens/Lavagem.jpeg'
     },
     pintura: {
       titulo: 'Pintura de Fachadas',
@@ -577,17 +584,21 @@ document.addEventListener("DOMContentLoaded", () => {
     revitalizacao: {
       titulo: 'Revitalização de Fachadas',
       descricao: 'Intervenções integradas para renovação técnica e estética da fachada, valorizando o imóvel e prolongando sua durabilidade. Combinamos limpeza profunda, reparos estruturais, aplicação de revestimentos modernos e pintura de alta qualidade. A revitalização resulta em um edifício que recupera sua beleza original e ganha proteção adicional contra o tempo.',
-      imagem: './src/imagens/Revitalização.jpeg'
+      imagem: './src/imagens/Revitalizacao.jpeg'
     }
   };
 
   servicos.forEach((s) => {
     const servico = servicosDetalhados[s];
+    const imagens = servico.imagens || [servico.imagem];
+    const imagensJSON = servico.imagens ? `data-carousel='${JSON.stringify(servico.imagens)}'` : '';
+    const imagem = imagens[0];
+    
     paginas[`servicos/${s}`] = `
       <section class="pagina-servico-detalhado">
         <div class="servico-detalhado-container">
-          <div class="servico-detalhado-imagem">
-            <img src="${servico.imagem}" alt="${servico.titulo}">
+          <div class="servico-detalhado-imagem" ${imagensJSON}>
+            <img src="${imagem}" alt="${servico.titulo}">
           </div>
           <div class="servico-detalhado-conteudo">
             <h1>${servico.titulo}</h1>
@@ -610,6 +621,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function iniciarCarrossel() {
+    // Carrossel simples (sem indicadores) para páginas de serviço
+    document.querySelectorAll(".servico-detalhado-imagem[data-carousel]").forEach((container) => {
+      const imagens = JSON.parse(container.getAttribute('data-carousel'));
+      const img = container.querySelector('img');
+      if (!img || imagens.length <= 1) return;
+
+      let indice = 0;
+      setInterval(() => {
+        img.classList.add('fade-out');
+        setTimeout(() => {
+          indice = (indice + 1) % imagens.length;
+          img.src = imagens[indice];
+          img.classList.remove('fade-out');
+        }, 250);
+      }, 4000);
+    });
+
+    // Carrossel com indicadores para a seção de cases
     document.querySelectorAll(".imagens").forEach((container) => {
       const imagens = container.querySelectorAll("img");
       if (imagens.length <= 1) return;
@@ -657,15 +686,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalReal = 24; // Número real de imagens
     
     const nomesCases = [
-      'Camerâ Municipal de Curitiba',
+      'Camarâ Municipal de Curitiba',
       'Chateu Lake Louise',
       'Cristhiane',
       'De Bonna 1',
-      'De Bonna',
+      'De Bonna 2',
       'Ernesto Nazareth',
       'Green Wood Residence 1',
       'Green Wood Residence 2',
-      'Green Wood Residence',
+      'Green Wood Residence 3',
       'Ibéria',
       'Miguel Bakun',
       'Mont Parnasse',
@@ -678,7 +707,7 @@ document.addEventListener("DOMContentLoaded", () => {
       'Solar do Sol',
       'Torre Velaska 1',
       'Torre Velaska 2',
-      'Torre Velaska',
+      'Torre Velaska 3',
       'Vesuvio',
       'Wizz Iguaçu'
     ];
