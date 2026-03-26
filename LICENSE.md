@@ -1,0 +1,1 @@
+Copyright (c) 2026 Presservice Manutencao Predial LTDA. Todos os direitos reservados. Este código é propriedade exclusiva de Presservice Manutencao Predial LTDA e não pode ser reproduzido, distribuído ou modificado sem permissão.
